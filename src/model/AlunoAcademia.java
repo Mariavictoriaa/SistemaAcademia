@@ -5,42 +5,42 @@
 package model;
 
 /**
- *
  * @author Instrutor
  */
 public class AlunoAcademia {
     String nomeAluno;
-    double pesoAluno;        
-    double alturaAluno;      
+    double pesoAluno;
+    double alturaAluno;
 
     public AlunoAcademia(String nomeAluno, double pesoAluno, double alturaAluno) {
         this.nomeAluno = nomeAluno;
         this.pesoAluno = pesoAluno;
         this.alturaAluno = alturaAluno;
     }
-    
-    
-    public double calculaIMC(){
-         return pesoAluno /(alturaAluno * alturaAluno);
-    
+
+
+    public double calculaIMC() {
+        return pesoAluno / (alturaAluno * alturaAluno);
+
     }
-       public void exibirStatus(){
-          double imc = calculaIMC();    
-          System.out.println ("Nome: " + nomeAluno);
-          System.out.println("imc: " + imc );
-          
-          if (imc < 18.5) {
-              System.out.println("Abaixo do peso");
-            }else if (imc < 25) {
-               System.out.println("Peso normal");
-               }else if (imc < 30) {        
-                 System.out.println("sobrepeso");
-                }else 
-                    System.out.println("obesidade");
-                       
-                  }            
-                               
-       }
+
+    public void exibirStatus() {
+        double imc = calculaIMC();
+        System.out.println("Nome: " + nomeAluno);
+        System.out.println("imc: " + imc);
+
+        if (imc < 18.5) {
+            System.out.println("Abaixo do peso");
+        } else if (imc < 25) {
+            System.out.println("Peso normal");
+        } else if (imc < 30) {
+            System.out.println("sobrepeso");
+        } else
+            System.out.println("obesidade");
+
+    }
+
+}
           
 
        
